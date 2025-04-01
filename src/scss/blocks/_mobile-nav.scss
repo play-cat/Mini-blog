@@ -1,0 +1,45 @@
+.mobile-nav {
+  // position: fixed;
+  // top: -100%;
+  width: 100%;
+  // height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  z-index: 1;
+  transition: all 0.5s ease-in;
+
+  max-height: 0;
+  overflow: hidden;
+
+  &--open {
+    max-height: 200px;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    font-size: 28px;
+
+    & .active {
+      opacity: 0.5;
+    }
+  }
+
+  &__btns {
+    padding: 10px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

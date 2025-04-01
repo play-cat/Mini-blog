@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | MyBlog</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+  </head>
+
+  <body>
+    @@include('blocks/header.html')
+    <main class="page-content">
+      <section>
+        <div class="container container-narrow">
+          <form class="form" name="login-form">
+            <h2 class="form__title">Login</h2>
+            <div class="form__input-wrapper">
+              <label class="form__label" for="email">Email</label>
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@mail.mail"
+              />
+            </div>
+            <div class="form__input-wrapper">
+              <label class="form_label" for="password">Password</label>
+              <input
+                class="form__input"
+                type="password"
+                id="padding"
+                name="password"
+                placeholder=""
+              />
+            </div>
+            <button type="button" class="btn btn_lg">
+              Login
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

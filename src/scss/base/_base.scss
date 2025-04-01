@@ -1,0 +1,64 @@
+/* prettier-ignore */
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+/* prettier-ignore */
+@import url(https://fonts.googleapis.com/css?family=Unbounded:500);
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(39, 39, 39);
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  text-wrap: stable;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: var(--link-color);
+}
+
+code {
+  background-color: #e9f1f6;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+pre.code {
+  overflow-x: auto;
+  background-color: #e9f1f6;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.page-content {
+  padding: 40px 0;
+
+  @include mobile {
+    padding: 0;
+  }
+}
+
+.ui-block {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+
+  &.dark {
+    background-color: #313131;
+  }
+
+  &_blue {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--page-bg);
+  }
+}

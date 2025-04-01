@@ -1,0 +1,33 @@
+:root {
+  --container-width: 1630px;
+  --container-padding: 15px;
+  --container-narrow: 630px;
+
+  --font-main: 'CircularStd', sans-serif;
+  --font-accent: 'Manrope', sans-serif;
+  --font-titles: var(--font-main);
+
+  --page-bg: #e7f0f3;
+  --text-color: #000;
+  --accent-color: #ac182c;
+  --link-color: #0069ca;
+  --outline-color: #c4e3ff;
+  --btn-bg-color: #000;
+  --btn-color: #fff;
+  --bg-color: #fff;
+
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+
+  @include mobile {
+    --container-narrow: 100%;
+  }
+}
+
+.dark {
+  --page-bg: #1f1f1f;
+  --text-color: #efefef;
+  --bg-color: #313131;
+  --link-color: #399af3;
+}

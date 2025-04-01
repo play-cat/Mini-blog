@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Kit</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+  </head>
+
+  <body>
+    @@include('blocks/header.html')
+    <main class="docs">
+      <section>
+        <div class="container">
+          <h3 class="title-3">Buttons</h3>
+          <div class="ui-block mt-20">
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Logout</a>
+            <button type="button" class="btn btn_toggle-theme">
+              🌘
+            </button>
+            <button type="button" class="btn btn_toggle-theme">
+              ☀️
+            </button>
+            <button type="button" class="btn btn_secondary">
+              Edit post
+            </button>
+          </div>
+          <div class="ui-block mt-20">
+            <button type="button" class="btn btn_loadmore">
+              Load more ...
+            </button>
+          </div>
+          <div class="ui-block mt-20">
+            <button type="button" class="btn btn_lg">
+              Refresh
+            </button>
+            <button type="button" class="btn btn_secondary btn_lg">
+              Cancel
+            </button>
+          </div>
+          <div class="ui-block  mt-20 dark">
+            <button type="button" class="btn btn_secondary">
+              Edit post
+            </button>
+          </div>
+          <h3 class="title-3">Forms</h3>
+          <div class="ui-block  mt-20">
+            <div class="form_input-wrapper">
+              <label class="form_label" for="email">Email</label>
+              <input
+                class="form_input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@mail.mail"
+              />
+            </div>
+            <div class="form_input-wrapper">
+              <label class="form_label" for="password">Password</label>
+              <input
+                class="form_input"
+                type="password"
+                id="padding"
+                name="password"
+                placeholder=""
+              />
+            </div>
+          </div>
+          <h3 class="title-3">Posts</h3>
+          @@include('blocks/post.html') @@include('blocks/post-short.html')
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
